@@ -15,7 +15,7 @@ const Home = () => {
   const handleClick = () => setShow(!show)
   const toast = useToast()
 
-  const correctPassword = 'Begov__1999';
+  const correctPassword = '6118481dbegov';
 
   const handleLogin = (e) => {
     e.preventDefault()
