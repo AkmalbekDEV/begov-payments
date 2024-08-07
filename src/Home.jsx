@@ -86,9 +86,9 @@ const Home = () => {
           </div>
         </div>
       ) : (
-        <div className='flex items-center justify-evenly w-full h-screen max-w-[1250px] mx-auto'>
+        <div className='flex items-center justify-evenly w-full h-screen max-w-[1250px] mx-auto max-sm:px-5'>
           <form onSubmit={handleLogin} className='w-full flex items-center justify-center flex-col gap-5'>
-            <InputGroup size='lg' w={'50%'}>
+            <InputGroup size='lg' w={{ base: '100%', md: '50%' }} >
               <Input
                 pr='4.5rem'
                 type={show ? 'text' : 'password'}
@@ -102,7 +102,7 @@ const Home = () => {
                 </Button>
               </InputRightElement>
             </InputGroup>
-            <Button colorScheme='blue' w={'8%'}>Enter!</Button>
+            <Button colorScheme='blue' w={{ base: '30%', md: '8%' }} onClick={handleLogin}>Enter!</Button>
           </form>
         </div>
       )}
