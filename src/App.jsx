@@ -9,6 +9,7 @@ import Even16 from './Even16'
 import Odd10 from './Odd10'
 import Odd14 from './Odd14'
 import Odd16 from './Odd16'
+import Odd17 from './Odd17'
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route path='/odd10' element={<Odd10 />} />
         <Route path='/odd14' element={<Odd14 />} />
         <Route path='/odd16' element={<Odd16 />} />
+        <Route path='/odd17' element={<Odd17 />} />
       </Routes>
     </div>
   )
